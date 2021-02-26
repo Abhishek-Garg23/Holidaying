@@ -10,13 +10,13 @@ const SearchRestaurant = () => {
 
 	return(
 		<>
-			<section className="contact" id="SearchRestaurant">
+			<section className="search" id="SearchRestaurant">
 				<div className="title">
 					<h2 className="titleText"><span>S</span>earch <span>F</span>ood <span>M</span>enu</h2>
 					<p>Search your Favourite Food Here!</p>
 				</div>
-				<div className="contactForm">
-					<form id="contactform">
+				<div className="searchForm">
+					<form>
 						<div className="inputBox">
 							<input 
 								type="text" 

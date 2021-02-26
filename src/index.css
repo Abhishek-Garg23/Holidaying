@@ -247,12 +247,12 @@ section
 /* Menu Section CSS End */
 
 /* Search Restaurant Section CSS */
-.contact
+.search
 {
 	background: url(images/contactbg.jpg);
 	background-size: cover;
 }
-.contactForm 
+.searchForm 
 {
 	padding: 75px 50px;
 	background: #fff;
@@ -261,14 +261,14 @@ section
 	margin-top: 50px;
 }
 
-.contactForm .inputBox
+.searchForm .inputBox
 {
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.contactForm .inputBox input
+.searchForm .inputBox input
 {
 	width: 100%;
 	border: 1px solid #555;
@@ -280,6 +280,62 @@ section
 	resize: none;
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+.center
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main
+{
+	width: 100%;
+	height: 50vh;
+}
+
+.searchbox
+{
+	width: 350px;
+	height: 350px;
+	position: relative;
+	cursor: pointer;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.searchbox img
+{
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+}
+
+.search-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 300px;
+	background: rgba(255,255,255,0.5);
+	flex-direction: column;
+	color: white;
+	clip-path: circle(0% at 50% 50%);
+	transition: all .5s;
+}
+
+.searchbox:hover .search-content 
+{
+	clip-path: circle(100% at 50% 50%);
+}
+
+.searchbox:hover img 
+{
+	filter: blur(10px);
+	transform: scale(1.1);
 }
 
 /* Search Restaurant Section CSS End*/
@@ -424,7 +480,7 @@ section
 		font-weight: 300;
 	}
 
-	.contactForm
+	.searchForm
 	{
 		padding: 35px 40px;
 		margin-top: 20px;
